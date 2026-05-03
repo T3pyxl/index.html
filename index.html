@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3PYXL | Scripting Portfolio</title>
+    <style>
+        :root {
+            --primary: #9d50bb;
+            --secondary: #6e48aa;
+            --bg: #0f0f12;
+            --card-bg: #1a1a20;
+            --text: #ffffff;
+            --text-dim: #a0a0a0;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(rgba(15, 15, 18, 0.8), rgba(15, 15, 18, 0.8)), 
+                        url('https://wallpaperaccess.com/full/1164134.jpg'); /* You can replace this with a screenshot of your code */
+            background-size: cover;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            background: linear-gradient(to right, #6e48aa, #9d50bb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Project Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .video-placeholder {
+            background: #000;
+            width: 100%;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dim);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* Contact Button */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--secondary), var(--primary));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>T3PYXL'S PORTFOLIO</h1>
+        <p class="tagline">Advanced Luau Scripter & Game Developer specializing in modular systems, high-performance Obbies, and clean UI design.</p>
+        <a href="#contact" class="btn">HIRE ME</a>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center;">My Work</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="video-placeholder">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Advanced Obby System</div>
+                    <p>Modular checkpoint system with model spawning and automatic progress saving.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="video-placeholder">
+                    <p>[Project Video 2]</p>
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Technical Systems</div>
+                    <p>Backend Luau frameworks for inventory, data-saving, and secure remote events.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" style="text-align: center; margin-top: 100px;">
+            <h2>Work with me</h2>
+            <p>I am currently accepting commissions via <b>PayPal</b>.</p>
+            <p>Discord: <b>@your_discord_tag</b></p>
+            <p>Affiliation: <b>Shrouded Development</b></p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 T3PYXL. Built for performance.
+    </footer>
+
+</body>
+</html>
